@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Novia 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f5;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: white;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+/* Galería de fotos */
+#galeria {
+    padding: 30px;
+    text-align: center;
+}
+/* Estilos del Carrusel */
+.carrusel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-activa {
+    width: 100%;
+    text-align: center;
+}
+
+.foto-activa img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.flecha:hover {
+    background: rgba(255, 107, 107, 0.8);
+    color: white;
+}
+
+.izquierda {
+    left: 10px;
+}
+
+.derecha {
+    right: 10px;
+}
+
+/* Mensajes */
+#mensajes {
+    background-color: #f8e1f4;
+    padding: 30px;
+    text-align: center;
+}
+
+.mensaje-carta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline */
+#timeline {
+    padding: 30px;
+    text-align: center;
+}
+
+.evento {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 500px;
+    border-left: 4px solid #ff6b6b;
+    text-align: left;
+}
+
+/* Canciones */
+#canciones {
+    background: #e0f4ff;
+    padding: 30px;
+    text-align: center;
+}
+
+.playlist a {
+    display: block;
+    margin: 10px;
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.playlist a:hover {
+    text-decoration: underline;
+}
+
+/* Formulario */
+#formulario {
+    padding: 30px;
+    text-align: center;
+}
+
+form textarea {
+    width: 80%;
+    max-width: 500px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+</style>
+<body>
+    <!-- Header con mensaje romántico -->
+    <header>
+        <h1>Para ti, mi amor 💖</h1>
+        <p>Eres la persona más especial en mi vida...</p>
+    </header>
+
+    <!-- Galería de Fotos (Carrusel) -->
+    <section id="galeria">
+        <h2>Nuestros Momentos Juntos</h2>
+        <div class="carrusel">
+            <button class="flecha izquierda" onclick="cambiarFoto(-1)">&#10094;</button>
+            <div class="foto-activa">
+                <img src="assets\images\IMG_5921.JPEG" alt="Foto nuestra 1" id="foto-actual">
+            </div>
+            <button class="flecha derecha" onclick="cambiarFoto(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Mensajes Especiales -->
+    <section id="mensajes">
+        <h2>Mensajes de mi Corazón</h2>
+        <div class="mensaje-carta">
+            <p>"El día que te conocí, mi vida cambió para siempre..."</p>
+        </div>
+    </section>
+
+    <!-- Línea de Tiempo -->
+    <section id="timeline">
+        <h2>Nuestra Historia</h2>
+        <div class="timeline">
+            <div class="evento">
+                <h3>Primera Cita ❤️</h3>
+                <p>15 de Febrero, 2023</p>
+            </div>
+            <!-- Añade más eventos -->
+        </div>
+    </section>
+
+    <!-- Canciones Favoritas -->
+    <section id="canciones">
+        <h2>Nuestras Canciones</h2>
+        <div class="playlist">
+            <a href="https://open.spotify.com/track/..." target="_blank">Canción 1</a>
+            <!-- Añade más canciones -->
+        </div>
+    </section>
+
+    <!-- Formulario de Mensajes -->
+    <section id="formulario">
+        <h2>Déjame un mensaje 💌</h2>
+        <form>
+            <textarea placeholder="Escribe algo lindo..."></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Hecho con amor para ti ❤️</p>
+    </footer>
+</body>
+</html>
